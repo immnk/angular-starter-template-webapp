@@ -8,6 +8,7 @@
     .navbar-bg .navbar-brand img {
       height: 50px; }
   .navbar-bg .tag-line {
+    float: left;
     padding: 0 10px;
     text-transform: capitalize; }
 
