@@ -6,5 +6,12 @@ function MenuController($scope) {
 
     function init() {
         console.log('Menu is initializing...');
+        $scope.showMenu = true;
+        $scope.menuClicked = false;
+    }
+
+    $scope.menuClick = function() {
+        $scope.showMenu = !$scope.showMenu;
+        $scope.menuClicked = !$scope.menuClicked;
     }
 }

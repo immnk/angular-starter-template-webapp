@@ -15,6 +15,30 @@
         padding: 0 10px;
         text-transform: capitalize;
     }
+    .navbar-toggle {
+        .icon-bar {
+            background-color: rgba(0, 100, 130, 1);
+        }
+    }
+    .navbar-header {
+        .relative {
+            position: relative;
+        }
+        .menu-click {
+            .topbar {
+                @extend .relative;
+                transform: rotate(45deg);
+                top: 6px;
+            }
+            .middlebar {
+                display: none;
+            }
+            .bottombar {
+                transform: rotate(-45deg);
+                top: 0px;
+            }
+        }
+    }
 }
 
 .navbar {
@@ -27,8 +51,8 @@
 }
 
 .template-holder {
-    min-height: calc(100vh - 100px);
-    /* Header 50px + Footer 50px */
+    min-height: calc(100vh - 102px);
+    /* Header 50px + Footer 52px */
     background: rgba(128, 128, 128, 0.20);
     position: relative;
 }
@@ -41,7 +65,7 @@
 
 .footer {
     padding: 0px 25px;
-    /*margin-top: 15px;*/
+    border: 0px solid transparent;
     border-top: 1px solid rgb(51, 51, 51);
     font-weight: lighter;
 }
